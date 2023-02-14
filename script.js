@@ -14,7 +14,7 @@ async function getQuote() {
     apiRes = await response.json();
     const randomQuote = apiRes[Math.floor(Math.random() * apiRes.length)];
     quoteText.textContent = randomQuote.text;
-    authorText.textContent = randomQuote.author;
+    authorText.textContent = `-  ${randomQuote.author}`;
   } catch (error) {
     console.log(error);
   }

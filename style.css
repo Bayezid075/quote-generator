@@ -41,10 +41,16 @@ body {
   border-radius: 5px;
   margin-left: 15px;
 }
+.new-quote:hover {
+  border: 2px solid gray;
+}
 .twitter-button {
   border: none;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
   margin-left: 15px;
+}
+.twitter-button:hover {
+  border: 2px solid gray;
 }
