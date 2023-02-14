@@ -5,7 +5,8 @@ async function getQuote() {
   try {
     const response = await fetch(apiUrl);
     apiRes = await response.json();
-    console.log(apiRes[5]);
+    const randomQuote = apiRes[Math.floor(Math.random() * apiRes.length)];
+    console.log(randomQuote);
   } catch (error) {
     console.log(error);
   }
